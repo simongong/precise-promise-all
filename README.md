@@ -4,11 +4,13 @@
 
 _from [Promise All - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)_
 
-What if you want all the promise tasks get executed even if one of them rejects somehow?
+There are some cases which `Promise.all` is not applicable for:
 
-Furthure more, you may want to know sepecifically which task is rejected as well.
+- Not all promise task are ensured to get executed due to `fast-fail`.
+- You don't know the resolved values in detail, only the overall result
+- You don't know which task gets rejected which you may want to process in another way.
 
-`precise-promise-all` will execute all the promise tasks with rejection ignored and return the precise resolved and rejected result.
+Therefore, I made `precise-promise-all`, which will execute all the promise tasks with rejection ignored and return the precise resolved values and rejected promises as well.
 
 ## Install
 
