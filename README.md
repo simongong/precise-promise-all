@@ -42,4 +42,4 @@ PrecisePromiseAll.parallel(iterable)
 
 ## License
 
-![MIT](LICENSE)
+[MIT](LICENSE)
