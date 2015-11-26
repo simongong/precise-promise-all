@@ -1,0 +1,29 @@
+{
+  "name": "precise-promise-all",
+  "version": "0.0.1",
+  "description": "Execute all the promise tasks with failure ignored and get the precise resolved and rejected result.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simongong/precise-promise-all.git"
+  },
+  "keywords": [
+    "promise.all",
+    "resolved",
+    "rejected",
+    "result"
+  ],
+  "author": "Simon Gong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simongong/precise-promise-all/issues"
+  },
+  "homepage": "https://github.com/simongong/precise-promise-all",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^7.1.1"
+  }
+}
