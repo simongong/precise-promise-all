@@ -1,7 +1,7 @@
 {
   "name": "precise-promise-all",
   "version": "0.0.1",
-  "description": "Execute all the promise tasks with failure ignored and get the precise resolved and rejected result.",
+  "description": "Execute all the promise tasks with rejection ignored and get the precise resolved and rejected result.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js"
