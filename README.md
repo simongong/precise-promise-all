@@ -1,5 +1,7 @@
 # precise-promise-all
 
+[![npm version](https://badge.fury.io/js/precise-promise-all.svg)](https://badge.fury.io/js/precise-promise-all)
+
 > `Promise.all` is rejected if one of the elements is rejected and Promise.all fails fast: If you have four promises which resolve after a timeout, and one rejects immediately, then Promise.all rejects immediately.
 
 _from [Promise All - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)_
