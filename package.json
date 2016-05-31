@@ -1,6 +1,6 @@
 {
   "name": "precise-promise-all",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Execute all the promise tasks with rejection ignored and get the precise resolved and rejected result.",
   "main": "index.js",
   "scripts": {

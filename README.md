@@ -8,11 +8,14 @@ _from [Promise All - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 There are some cases which `Promise.all` is not applicable for:
 
-- Not all promise task are ensured to get executed due to `fast-fail`.
+- Not all tasks are ensured to get executed due to `fast-fail`.
 - You don't know the resolved values in detail, only the overall result
-- You don't know which task gets rejected which you may want to process in another way.
+- You don't know rejected tasks which you may want to process afterwards.
 
-Therefore, I made `precise-promise-all`, which will execute all the promise tasks with rejection ignored and return the precise resolved values and rejected promises as well.
+Therefore, I made this `precise-promise-all`, which will
+
+- execute **all** the promise tasks
+- return the precise resolved values **and** rejected promises as well.
 
 ## Install
 
@@ -25,8 +28,8 @@ $ npm install --save precise-promise-all
 
 `precise-promise-all` provides two APIs which work in different way but yield the same result:
 
-- `PrecisePromiseAll.parallel`
-- `PrecisePromiseAll.sequential`
+- `parallel(iterable)`
+- `sequential(iterable)`
 
 #### Example
 
@@ -40,7 +43,7 @@ PrecisePromiseAll.parallel(iterable)
     // resolved looks like {index1: resolvedValue1, ...} and
     // rejected looks like {index2: iterable[index2]}.
     // So you can consume values of resolved promises and
-    // hanlde those rejected promises once again
+    // hanlde those rejected promises afterwards
 });
 ```
 
